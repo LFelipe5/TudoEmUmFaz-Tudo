@@ -1,0 +1,1 @@
+{% extends 'core/base.html' %}{% block content %}<h1>Welcome to your toolbox.</h1><p>Sign in with the account created using createsuperuser.</p><form class="panel" method="post">{% csrf_token %}{{ form.as_p }}<button class="button">Sign in</button></form>{% endblock %}
